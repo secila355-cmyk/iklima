@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kutuphaneotomasyonu.online</title>
+    <meta
+      name="description"
+      content="Kutuphaneotomasyonu.online - kutuphane otomasyon paneli"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container row">
+        <h1>Kutuphaneotomasyonu.online</h1>
+        <span class="tag">Kutuphane Otomasyon Paneli</span>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="stats">
+        <article class="card">
+          <h2 id="bookCount">0</h2>
+          <p>Toplam Kitap</p>
+        </article>
+        <article class="card">
+          <h2 id="availableCount">0</h2>
+          <p>Uygun</p>
+        </article>
+        <article class="card">
+          <h2 id="loanedCount">0</h2>
+          <p>Oduncte</p>
+        </article>
+        <article class="card">
+          <h2 id="overdueCount">0</h2>
+          <p>Geciken</p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Kitap Listesi</h2>
+          <input id="searchInput" type="search" placeholder="Kitap veya yazar ara..." />
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Kitap</th>
+                <th>Yazar</th>
+                <th>ISBN</th>
+                <th>Raf</th>
+                <th>Kategori</th>
+                <th>Durum</th>
+              </tr>
+            </thead>
+            <tbody id="booksTbody">
+              <tr>
+                <td colspan="6" class="message">Kitaplar yukleniyor...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
